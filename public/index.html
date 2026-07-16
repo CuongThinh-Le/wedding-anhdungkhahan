@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thiệp Cưới — Khả Hân &amp; Anh Dũng · 19.09.2026</title>
-  <meta name="description" content="Trân trọng kính mời Quý khách tham dự Lễ Vu Quy của Lê Ngọc Khả Hân & Lê Anh Dũng — 19.09.2026 tại Grand Palace Quy Nhon." />
+  <title>Thiệp Cưới — Anh Dũng &amp; Khả Hân · 30.09.2026</title>
+  <meta name="description" content="Trân trọng kính mời Quý khách tham dự Lễ Thành Hôn của Lê Anh Dũng & Lê Ngọc Khả Hân — 30.09.2026 tại GOLD COAST HOTEL RESORT & SPA." />
   <meta name="theme-color" content="#7c1a17" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +12,82 @@
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+        <!-- <div id="intro">
+
+        <div class="intro-content">
+
+            <p class="intro-subtitle">
+                Wedding Invitation
+            </p>
+
+            <h1>
+                Lê Ngọc Khả Hân
+                <span>&</span>
+                Lê Anh Dũng
+            </h1>
+
+            <p class="intro-text">
+                Trân trọng kính mời bạn đến chung vui cùng chúng mình
+            </p>
+
+            <button id="openInvitation">
+                💌 Chạm để mở thiệp
+            </button>
+
+        </div>
+
+    </div> -->
+
+        <div id="petals"></div>
+        
+<div id="intro" class="intro-bg">
+    
+    <!-- Sân khấu 3D -->
+    <div class="scene" id="scene">
+        <!-- Khối bao thư 3D có độ dày -->
+        <div class="envelope-3d" id="envelope-3d">
+
+            <!-- 4 CẠNH VIỀN TẠO ĐỘ DÀY CHO BAO THƯ -->
+            <div class="edge edge-left"></div>
+            <div class="edge edge-right"></div>
+            <div class="edge edge-bottom"></div>
+            <div class="edge edge-top"></div> <!-- Sẽ biến mất khi mở thư -->
+
+            <!-- MẶT TRƯỚC: LƯNG BAO THƯ (Ảnh 3) -->
+            <div class="face face-front">
+                <img src="/images/env-close.png" alt="Mặt sau bao thư">
+            </div>
+
+            <!-- MẶT SAU: BAO THƯ HỔ MÈO & RÚT THƯ (Ảnh 1 & 2) -->
+            <div class="face face-back">
+                <div class="envelope-wrapper" id="envelope-wrapper">
+                    <!-- Thư bên trong -->
+                    <div class="card-letter">
+                        <img src="/images/thiep-grand.png" alt="Thiệp chính thức">
+                    </div>
+                    <!-- Hình mặt trước bao thư đè lên -->
+                    <div class="card-front-img">
+                        <img src="/images/thiep-chinh.png" alt="Thiệp Hổ Mèo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Dòng chữ hướng dẫn -->
+    <div class="drag-hint" id="drag-hint">
+        Xoay thiệp mời để xem
+    </div>
+
+    <!-- Nút bấm cố định -->
+    <button id="openInvitation" class="creative-btn">
+        <span class="icon-bounce">💌</span> Mở Bao Thư
+    </button>
+
+</div>
+
+    <div id="website">
   <main class="invite">
 
     <!-- ============ COVER ============ -->
@@ -20,59 +96,146 @@
         <p class="cover__title">THE<br />WEDDING OF</p>
 
         <div class="cover__glasses" aria-hidden="true">
-          <svg viewBox="0 0 120 130" width="110" height="120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M30 22 q3 26 0 38 a10 10 0 0 0 20 0 q-3 -12 0 -38 z" />
-            <path d="M30 22 h20" />
-            <path d="M40 60 v30" />
-            <path d="M30 92 h20" />
-            <path d="M60 30 q3 24 0 34 a10 10 0 0 0 20 0 q-3 -10 0 -34 z" />
-            <path d="M60 30 h20" />
-            <path d="M70 64 v30" />
-            <path d="M60 96 h20" />
-            <path d="M40 90 q-14 4 -18 14 M40 90 q0 10 8 16 M40 90 q8 4 14 12" />
-            <path d="M70 94 q-14 4 -18 14 M70 94 q2 10 10 16 M70 94 q8 4 14 12" />
-            <path d="M52 14 l0 8 M48 18 l8 0 M92 30 l0 8 M88 34 l8 0 M96 46 l0 6 M93 49 l6 0" />
-          </svg>
+          <img src="/images/1.png" alt="" />
         </div>
 
-        <p class="cover__names script">Khả Hân<br /><span class="amp">&amp;</span><br />Anh Dũng</p>
+        <p class="cover__names script">Anh Dũng<br /><span><img src="/images/2.png" alt="" /></span><br />Khả Hân</p>
 
         <p class="cover__invite">WE INVITE YOU TO JOIN US TO<br />CELEBRATE OUR MARRIAGE</p>
 
         <div class="cover__rule"></div>
-        <p class="cover__date script">19<sup>th</sup> September 2026</p>
+        <p class="cover__date script">30<sup>th</sup> September 2026</p>
       </div>
     </section>
 
     <!-- ============ INVITATION / FAMILIES ============ -->
     <section class="section invitation reveal">
       <p class="quote"><em>“ Hôn nhân là chuyện cả đời, yêu người vừa ý, cưới người mình thương ”</em></p>
+      <div class="invite-layout">
+        <h2 class="big-title">
+          <span>THIỆP</span>
+          <span>MỜI</span>
+          <span>CƯỚI</span>
+        </h2>
 
-      <h2 class="big-title">
-        <span>THIỆP</span>
-        <span>MỜI</span>
-        <span>CƯỚI</span>
-      </h2>
-
-      <div class="families">
-        <div class="family">
-          <p class="family__label">NHÀ GÁI</p>
-          <p class="family__name">Ông LÊ VĂN CƯỜNG</p>
-          <p class="family__name">Bà LÊ THỊ QUỲNH TRANG</p>
-          <p class="family__addr">phường Quy Nhơn Nam - tỉnh Gia Lai</p>
-        </div>
-        <div class="family">
-          <p class="family__label">NHÀ TRAI</p>
-          <p class="family__name">Ông LÊ VIẾT HÙNG</p>
-          <p class="family__name">Bà TRẦN THỊ ANH</p>
-          <p class="family__addr">phường Đồng Thuận - tỉnh Quảng Trị</p>
+        <div class="families">
+            <div class="family1">
+            <p class="family__label">NHÀ TRAI</p>
+            <p class="family__name">Ông LÊ VIẾT HÙNG</p>
+            <p class="family__name">Bà TRẦN THỊ ANH</p>
+            <p class="family__addr1">phường Đồng Thuận - tỉnh Quảng Trị</p>
+          </div>
+          <div class="family2">
+            <p class="family__label">NHÀ GÁI</p>
+            <p class="family__name">Ông LÊ VĂN CƯỜNG</p>
+            <p class="family__name">Bà LÊ THỊ QUỲNH TRANG</p>
+            <p class="family__addr2">phường Quy Nhơn Nam - tỉnh Gia Lai</p>
+          </div>
         </div>
       </div>
 
-      <p class="invite-lead">Trân trọng kính mời Quý khách dành thời gian quý giá tham dự<br /><strong>Lễ Vu Quy của</strong></p>
+      <p class="invite-lead">Trân trọng kính mời Quý khách dành thời gian quý giá tham dự<br /><strong>Lễ Thành Hôn của</strong></p>
 
-      <p class="couple script">Lê Ngọc Khả Hân<br /><span class="amp">&amp;</span><br />Lê Anh Dũng</p>
+       <div class="couple">
+
+            <span class="handwrite groom">
+                Lê Anh Dũng
+            </span>
+
+            <span class="amp">&</span>
+
+            <span class="handwrite bride">
+                Lê Ngọc Khả Hân
+            </span>
+
+        </div>
+
+        <div class="cat">
+
+            <img src="images/cat.png" alt="Bride & Groom">
+
+        </div>
     </section>
+
+    <!-- ============ EVENT DETAILS ============ -->
+    <section class="section events reveal">
+      <h2 class="event-date script">30/09/2026</h2>
+      <div class="rings" aria-hidden="true">
+        <img src="/images/rings.png" alt="" />
+      </div>
+
+      <div class="event">
+        <div class="event__title-row">
+          <h3 class="event__title">LỄ THÀNH HÔN</h3>
+          <span class="event__line"></span>
+        </div>
+        <div class="event__info event__info--right">
+          <p>08:00 - Thứ Tư</p>
+          <p><strong>30.09.2026</strong></p>
+          <p>(Tức ngày 20 tháng 08 Năm Bính Ngọ)</p>
+          <p>Tại Tư Gia Nhà Trai</p>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event__title-row event__title-row--rev">
+          <span class="event__line"></span>
+          <h3 class="event__title">TIỆC MỪNG LỄ THÀNH HÔN</h3>
+        </div>
+        <div class="event__info">
+          <p>16:30 - Thứ Tư</p>
+          <p><strong>30.09.2026</strong></p>
+          <p>(Tức ngày 20 tháng 08 Năm Bính Ngọ)</p>
+          <p>Tại GOLD COAST HOTEL RESORT & SPA</p>
+        </div>
+      </div>
+
+    <div class="calendar1" id="">
+      <img src="/images/calendar.png" alt="" />
+    </div>
+
+    </section>
+
+    <!-- ============ VENUE / MAP ============ -->
+
+    <!-- ============ VENUE ============ -->
+    <section class="section venue reveal">
+
+      <div class="venue__header">
+        <img src="/images/google-maps.png" alt="" class="venue__icon">
+        <span>Địa điểm tổ chức</span>
+      </div>
+
+      <div class="venue__content">
+
+        <h2 class="venue__title">
+          GOLD COAST HOTEL RESORT & SPA
+        </h2>
+
+        <p class="venue__address">
+          Đường Võ Nguyên Giáp biển Bảo Ninh, Đồng Hới
+        </p>
+
+        <img
+          class="venue__map"
+          src="/images/map.png"
+          alt="Bản đồ Grand Palace Quy Nhơn"
+          loading="lazy">
+
+          <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Gold+Coast+Hotel+Resort+%26+Spa" target="_blank" rel="noopener">
+            Mở chỉ đường trên Google Maps
+          </a>
+
+      </div>
+
+    </section>
+
+    <!-- <section class="section media reveal"> -->
+      <!-- <img class="media__img media__img--map" src="/images/venue-map.png" alt="Bản đồ Grand Palace Quy Nhon, Cầu 2 Hà Thanh, Phường Quy Nhơn, Tỉnh Gia Lai" loading="lazy" /> -->
+      <!-- <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Grand+Palace+Quy+Nhon" target="_blank" rel="noopener">
+        Mở chỉ đường trên Google Maps
+      </a>
+    </section> -->
 
     <!-- ============ HOW WE MET ============ -->
     <section class="section story reveal">
@@ -85,6 +248,7 @@
         trân trọng nhau hơn. Và hôm nay, khi bước sang năm thứ 10, chúng mình chọn nắm tay nhau về chung một
         nhà, mở ra chương mới của hành trình mang tên <strong>“GIA ĐÌNH”</strong>.
       </p>
+      <img class="story__img" src="/images/story.png" alt="Anh Dũng và Khả Hân trong bộ ảnh cưới" loading="lazy" />
       <p class="story__wish">
         Chúng mình rất mong được đón tiếp sự hiện diện của gia đình, người thân và bạn bè để cùng chứng kiến,
         sẻ chia niềm hạnh phúc và gửi đến chúng mình những lời chúc phúc trong ngày trọng đại này.
@@ -92,75 +256,88 @@
     </section>
 
     <!-- ============ ALBUM ============ -->
-    <section class="section media reveal">
+    <!-- <section class="section media reveal">
       <div class="ribbon-heading">
         <span class="ribbon-heading__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg>
         </span>
         Album hình cưới của chúng mình
       </div>
-      <img class="media__img" src="/images/album.png" alt="Album ảnh cưới của Khả Hân và Anh Dũng" loading="lazy" />
+    <section class="section media reveal album-section">
+    
+    <div class="collage-container">
+        <img class="photo photo-1" src="/images/anh1.jpg" alt="Ảnh 1" />
+        <img class="photo photo-2" src="/images/anh2.jpg" alt="Ảnh 2" />
+        <img class="photo photo-3" src="/images/anh3.jpg" alt="Ảnh 3" />
+        <img class="photo photo-4" src="/images/anh4.jpg" alt="Ảnh 4" />
+        
+        <img class="photo pin-1" src="/images/paperclip (1).png" alt="" />
+        <img class="photo pin-1" src="/images/paperclip (2).png" alt="" />
+        <img class="photo pin-1" src="/images/pin (1).png" alt="" />
+        <img class="photo pin-1" src="/images/paper-pin.png" alt="" />
+        <img class="photo pin-1" src="/images/push-pin.png" alt="" />
+    </div>
+    </section> -->
+    <!-- ============ ALBUM ============ -->
+    <section class="section media reveal album-section">
+    
+    <div class="album-board">
+        <div class="ribbon-heading">
+        <span class="ribbon-heading__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg>
+        </span>
+            Album hình cưới của chúng mình
+        </div>
+        
+        <!-- ẢNH 1: KHUNG KEM -->
+        <div class="photo-frame frame-cream pic-1">
+        <img class="pin" src="/images/pin.png" alt=""> <!-- Bạn thay link ảnh chiếc ghim của bạn vào đây -->
+        <img class="photo-img" src="/images/anh1.jpg" alt="Ảnh 1">
+        </div>
+
+        <!-- ẢNH 2: KHUNG ĐỎ -->
+        <div class="photo-frame frame-red pic-2">
+        <img class="pin" src="/images/pin (1).png" alt="">
+        <img class="photo-img" src="/images/anh2.jpg" alt="Ảnh 2">
+        </div>
+
+        <div class="love">
+            <img class="lover" src="/images/lover.png">
+        </div>
+
+        <!-- ẢNH 3: KHUNG ĐỎ -->
+        <div class="photo-frame frame-red pic-3">
+        <img class="pin" src="/images/pin.png" alt="">
+        <img class="photo-img" src="/images/anh3.jpg" alt="Ảnh 3">
+        </div>
+
+        <!-- ẢNH 4: KHUNG KEM -->
+        <div class="photo-frame frame-cream pic-4">
+        <img class="pin" src="/images/paperclip (1).png" alt="">
+        <img class="photo-img" src="/images/anh4.jpg" alt="Ảnh 4">
+        </div>
+
+    </div>
     </section>
 
-    <!-- ============ EVENT DETAILS ============ -->
-    <section class="section events reveal">
-      <h2 class="event-date script">19/09/2026</h2>
-      <div class="rings" aria-hidden="true">
-        <svg viewBox="0 0 90 50" width="86" height="48" fill="none" stroke="currentColor" stroke-width="1.6">
-          <ellipse cx="34" cy="30" rx="16" ry="15" />
-          <ellipse cx="56" cy="26" rx="14" ry="13" />
-          <path d="M52 10 l4 -6 l4 6 z" fill="currentColor" stroke="none"/>
-          <path d="M56 4 l2 3 M56 4 l-2 3" />
-        </svg>
-      </div>
+<!-- ============ COUPLE COLLAGE ============ -->
+    <section class="section media reveal collage-section">
+    <div class="doctor-collage-container">
+        
+        <!-- Lớp 1: Ảnh nền lớn phía sau -->
+        <img class="collage-base" src="/images/anh5.jpg" alt="Ảnh nền Anh Dũng và Khả Hân" loading="lazy" />
 
-      <div class="event">
-        <div class="event__title-row">
-          <h3 class="event__title">LỄ VU QUY</h3>
-          <span class="event__line"></span>
+        <!-- Lớp 2: Ảnh nhỏ bên trái -->
+        <div class="polaroid-frame p-left">
+        <img src="/images/anh6.jpg" alt="Ảnh nhỏ trái" loading="lazy" />
         </div>
-        <div class="event__info event__info--right">
-          <p>14:00 - Thứ Bảy</p>
-          <p><strong>19.09.2026</strong></p>
-          <p>(Tức ngày 09 tháng 08 Năm Bính Ngọ)</p>
-          <p>Tại Tư Gia Nhà Gái</p>
-        </div>
-      </div>
 
-      <div class="event">
-        <div class="event__title-row event__title-row--rev">
-          <span class="event__line"></span>
-          <h3 class="event__title">TIỆC MỪNG LỄ VU QUY</h3>
+        <!-- Lớp 3: Ảnh nhỏ bên phải -->
+        <div class="polaroid-frame p-right">
+        <img src="/images/anh7.jpg" alt="Ảnh nhỏ phải" loading="lazy" />
         </div>
-        <div class="event__info">
-          <p>17:00 - Thứ Bảy</p>
-          <p><strong>19.09.2026</strong></p>
-          <p>(Tức ngày 09 tháng 08 Năm Bính Ngọ)</p>
-          <p>Tại Nhà Hàng GRAND PALACE - Sảnh 3 Tầng 2</p>
-        </div>
-      </div>
 
-      <!-- Calendar built by script.js -->
-      <div class="calendar" id="calendar">
-        <div class="calendar__head">
-          <p class="calendar__month script">Tháng 9</p>
-          <p class="calendar__year">· 2026 ·</p>
-        </div>
-        <table class="calendar__table" id="calendar-table"></table>
-      </div>
-    </section>
-
-    <!-- ============ VENUE / MAP ============ -->
-    <section class="section media reveal">
-      <img class="media__img media__img--map" src="/images/venue-map.png" alt="Bản đồ Grand Palace Quy Nhon, Cầu 2 Hà Thanh, Phường Quy Nhơn, Tỉnh Gia Lai" loading="lazy" />
-      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Grand+Palace+Quy+Nhon" target="_blank" rel="noopener">
-        Mở chỉ đường trên Google Maps
-      </a>
-    </section>
-
-    <!-- ============ COUPLE COLLAGE ============ -->
-    <section class="section media reveal">
-      <img class="media__img" src="/images/collage.png" alt="Bộ ảnh cưới của Khả Hân và Anh Dũng" loading="lazy" />
+    </div>
     </section>
 
     <!-- ============ GIFT / QR ============ -->
@@ -171,13 +348,886 @@
       </button>
     </section>
 
+    <section class="section wishes reveal">
+
+        <h2 class="wishes__title">
+            💌 LỜI CHÚC
+        </h2>
+
+        <p class="wishes__subtitle">
+            Những lời yêu thương từ gia đình và bạn bè
+        </p>
+
+        <div id="wish-list" class="wish-list"></div>
+        <div id="pagination" class="pagination"></div>
+
+
+    </section>
+
     <footer class="footer">
-      <p class="footer__names script">Khả Hân &amp; Anh Dũng</p>
-      <p class="footer__date">19 · 09 · 2026</p>
+      <p class="footer__names script">Anh Dũng &amp; Khả Hân</p>
+      <p class="footer__date">30 · 09 · 2026</p>
+
+      <section class="section countdown reveal">
+
+    <div class="countdown__timer">
+
+        <div class="countdown__item">
+            <div id="days" class="count-number">00</div>
+            <div class="count-label">Days</div>
+        </div>
+
+        <div class="countdown__item">
+            <div id="hours" class="count-number">00</div>
+            <div class="count-label">Hours</div>
+        </div>
+
+        <div class="countdown__item">
+            <div id="minutes" class="count-number">00</div>
+            <div class="count-label">Minutes</div>
+        </div>
+
+        <div class="countdown__item">
+            <div id="seconds" class="count-number">00</div>
+            <div class="count-label">Seconds</div>
+        </div>
+
+    </div>
+
+    </section>
+        <section class="section rsvp reveal">
+
+        <h2 class="rsvp__title">XÁC NHẬN THAM DỰ</h2>
+
+        <p class="rsvp__desc">
+            Sự hiện diện của bạn là niềm hạnh phúc đối với chúng mình
+        </p>
+
+        <form id="rsvp-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfosTd-SOL4J5y1id1DYQMpX-P4wJd94Qe32nM5J7BSjWutDA/formResponse"
+            method="POST"
+            target="hidden_iframe"
+            onsubmit="submitted=true;">
+
+            <input
+                type="text"
+                name="entry.165509221"
+                placeholder="Họ và tên"
+                required>
+
+            <select id="attendance" name="entry.1376398390">
+                <option value="💖 Có tham dự">💖 Có tham dự</option>
+                <option value="😢 Xin phép vắng mặt">😢 Xin phép vắng mặt</option>
+            </select>
+
+            <select id="guestCount" name="entry.1951568082">
+                <option value="0" selected>0 người</option>
+                <option value="1">1 người</option>
+                <option value="2">2 người</option>
+                <option value="3">3 người</option>
+                <option value="4">4 người</option>
+            </select>
+
+            <textarea
+                rows="4"
+                name="entry.1511891191"
+                placeholder="Gửi lời chúc đến cô dâu chú rể ❤️"></textarea>
+
+            <button type="submit">
+                Gửi xác nhận
+            </button>
+
+        </form>
+
+        <iframe
+            name="hidden_iframe"
+            style="display:none">
+        </iframe>
+
+    </section>
+
       <p class="footer__thanks">Cảm ơn Quý khách đã dành tình cảm cho chúng mình ♥</p>
     </footer>
   </main>
 
   <script src="/script.js"></script>
+
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="/music/16724417-1334-4fb7-a84b-db897504e84e.mp4" type="audio/mpeg">
+  </audio>
+
+    <div id="musicBtn" class="vinyl-player">
+
+        <div class="tonearm"></div>
+
+        <div class="vinyl-disc">
+
+            <div class="vinyl-center">
+                <span id="musicIcon">▶</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        const reveals = document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("active");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        }, {
+            threshold: 0.39
+        });
+
+        reveals.forEach(section => observer.observe(section));
+    </script>
 </body>
+
+<script>
+  /* ================= COUNTDOWN ================= */
+
+const weddingDate = new Date("September 30, 2026 17:30:00").getTime();
+
+function updateCountdown() {
+
+    const now = new Date().getTime();
+
+    const distance = weddingDate - now;
+
+    if(distance <= 0){
+
+        document.querySelector(".countdown__timer").innerHTML =
+            "<h3>🎉 Hôm nay là ngày cưới!</h3>";
+
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+        (distance % (1000 * 60))
+        / 1000
+    );
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+</script>
+
+
+<script>
+    const attendance = document.getElementById("attendance");
+    const guestCount = document.getElementById("guestCount");
+    const form = document.getElementById("rsvp-form");
+    const iframe = document.querySelector("iframe[name='hidden_iframe']");
+
+    let submitted = false;
+
+    /* =======================
+    Hàm cập nhật số lượng khách
+    ======================= */
+    function updateGuestCount() {
+
+        if (attendance.value === "😢 Xin phép vắng mặt") {
+
+            guestCount.innerHTML = `
+                <option value="0" selected>0 người</option>
+            `;
+
+        } else {
+
+            guestCount.innerHTML = `
+                <option value="1" selected>1 người</option>
+                <option value="2">2 người</option>
+                <option value="3">3 người</option>
+                <option value="4">4 người</option>
+            `;
+
+        }
+
+    }
+
+    /* =======================
+    Khi đổi trạng thái tham dự
+    ======================= */
+    attendance.addEventListener("change", updateGuestCount);
+
+    /* =======================
+    Khi submit form
+    ======================= */
+    form.addEventListener("submit", () => {
+        submitted = true;
+    });
+
+    /* =======================
+    Sau khi Google Form trả về
+    ======================= */
+    iframe.onload = function () {
+
+        if (!submitted) return;
+
+        alert("💖 Cảm ơn bạn đã xác nhận!");
+
+        // Reset toàn bộ form
+        form.reset();
+
+        // Đưa select về trạng thái mặc định
+        updateGuestCount();
+
+        submitted = false;
+
+    };
+
+    // Khởi tạo lần đầu khi mở trang
+    updateGuestCount();
+
+</script>
+
+<script>
+    // 👉 BẠN HÃY DÁN ĐƯỜNG LINK WEB APP VỪA COPY Ở BƯỚC TRÊN VÀO TRONG DẤU NGOẶC KÉP NÀY:
+    const API_URL = "https://script.google.com/macros/s/AKfycbzvKjpZddJGI_hTPwZMAqoUQC8r4HM7mUZODWzQ2XTNYKQEH7sisgsogXdH3L551nN-EQ/exec"; 
+    
+    let wishesData = [];
+    let currentPage = 1;
+    const itemsPerPage = 3; // Số lời chúc hiển thị trên 1 trang
+
+    // Hàm gọi dữ liệu từ Google Sheet
+    async function fetchWishes() {
+        const list = document.getElementById("wish-list");
+        list.innerHTML = "<p style='text-align:center; color:#888;'>Đang tải những lời chúc ngọt ngào...</p>"; 
+
+        try {
+            const response = await fetch(API_URL);
+            wishesData = await response.json();
+            renderWishes(1); // Tải xong thì hiển thị trang 1
+        } catch (error) {
+            console.error("Lỗi:", error);
+            list.innerHTML = "<p style='text-align:center; color:red;'>Tạm thời chưa thể tải lời chúc.</p>";
+        }
+    }
+
+    // Hàm hiển thị 3 lời chúc theo số trang
+    function renderWishes(page) {
+        const list = document.getElementById("wish-list");
+        list.innerHTML = ""; 
+
+        // Tính toán vị trí cắt mảng dữ liệu
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        const paginatedItems = wishesData.slice(start, end);
+
+        if (paginatedItems.length === 0) {
+             list.innerHTML = "<p style='text-align:center; color:#888;'>Hãy là người đầu tiên gửi lời chúc đến cô dâu chú rể nhé! ❤️</p>";
+             return;
+        }
+
+        paginatedItems.forEach(w => {
+            // Tự động lấy chữ cái đầu tiên của tên làm Avatar
+            const firstLetter = w.name ? w.name.charAt(0).toUpperCase() : "❤";
+
+            list.innerHTML += `
+            <div class="wish-card">
+                <div class="wish-header">
+                    <div class="avatar">${firstLetter}</div>
+                    <div class="wish-name">${w.name}</div>
+                </div>
+                <div class="wish-message">${w.message}</div>
+                <div class="wish-time">🕒 ${w.time}</div>
+            </div>
+            `;
+        });
+
+        renderPagination();
+    }
+
+    // Hàm tạo nút bấm chuyển trang (1, 2, 3...)
+    function renderPagination() {
+        const totalPages = Math.ceil(wishesData.length / itemsPerPage);
+        const pagin = document.getElementById("pagination");
+        if (!pagin) return;
+        
+        pagin.innerHTML = "";
+
+        // Nếu chỉ có 1 trang thì không cần hiện nút
+        if (totalPages <= 1) return; 
+
+        for (let i = 1; i <= totalPages; i++) {
+            pagin.innerHTML += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+        }
+    }
+
+    // Hàm xử lý khi bấm vào nút chuyển trang
+    function changePage(page) {
+        currentPage = page;
+        renderWishes(page);
+    }
+
+    // Kích hoạt hàm lấy dữ liệu ngay khi web vừa mở lên
+    fetchWishes();
+</script>
+
+<!-- <script>
+const wishes = [
+
+    {
+        name:"Lê Cường Thịnh",
+        message:"Chúc anh chị trăm năm hạnh phúc ❤️",
+        time:"12/07/2026 20:12"
+    },
+
+    {
+        name:"Nguyễn Thương",
+        message:"Happy Wedding 🎉",
+        time:"12/07/2026 20:05"
+    },
+
+    {
+        name:"Trần Minh",
+        message:"Mãi yêu nhau nhé 🥰",
+        time:"12/07/2026 19:55"
+    }
+
+];
+
+const list=document.getElementById("wish-list");
+
+wishes.forEach(w=>{
+
+    list.innerHTML+=`
+
+    <div class="wish-card">
+
+        <div class="wish-header">
+
+            <div class="avatar">
+                ${w.name.charAt(0).toUpperCase()}
+            </div>
+
+            <div class="wish-name">
+                ${w.name}
+            </div>
+
+        </div>
+
+        <div class="wish-message">
+            ${w.message}
+        </div>
+
+        <div class="wish-time">
+            🕒 ${w.time}
+        </div>
+
+    </div>
+
+    `;
+
+});
+</script> -->
+
+<script>
+    const music = document.getElementById("bgMusic");
+    const player = document.getElementById("musicBtn");
+    const disc = document.querySelector(".vinyl-disc");
+
+    const intro = document.getElementById("intro");
+    const website = document.getElementById("website");
+    const openBtn = document.getElementById("openInvitation");
+
+    let playing = false;
+
+    async function playMusic(){
+
+        try{
+
+            await music.play();
+
+            playing = true;
+
+            disc.classList.add("playing");
+
+            document.getElementById("musicIcon").textContent = "❚❚";
+
+        }catch(e){
+
+            console.log(e);
+
+        }
+
+    }
+
+    function pauseMusic(){
+
+        music.pause();
+
+        playing = false;
+
+        disc.classList.remove("playing");
+
+        document.getElementById("musicIcon").textContent = "▶";
+
+    }
+
+    openBtn.addEventListener("click",async()=>{
+
+        await playMusic();
+
+        intro.classList.add("hide");
+
+        website.classList.add("show");
+
+    });
+
+    player.addEventListener("click",(e)=>{
+
+        e.stopPropagation();
+
+        if(playing){
+
+            pauseMusic();
+
+        }else{
+
+            playMusic();
+
+        }
+
+    });
+</script>
+
+<script>
+    function createPetals(){
+
+    const container=document.getElementById("petals");
+
+    for(let i=0;i<15;i++){
+
+        const petal=document.createElement("div");
+
+        petal.className="petal";
+
+        petal.style.left=Math.random()*100+"vw";
+
+        petal.style.animationDuration=
+            (5+Math.random()*4)+"s";
+
+        petal.style.animationDelay=
+            Math.random()+"s";
+
+        petal.style.opacity=
+            .6+Math.random()*.4;
+
+        petal.style.transform=
+            `rotate(${Math.random()*360}deg)`;
+
+        container.appendChild(petal);
+
+        petal.addEventListener("animationend",()=>{
+
+            petal.remove();
+
+        });
+
+    }
+
+}
+
+    openBtn.addEventListener("click",async()=>{
+
+        createPetals();
+
+        await playMusic();
+
+        intro.classList.add("hide");
+
+        website.classList.add("show");
+
+    });
+</script>
+
+<script>
+    const groom = document.querySelector(".groom");
+    const cat = document.querySelector(".cat");
+
+    groom.addEventListener("animationend", (e) => {
+
+        if (e.animationName === "typing") {
+            cat.classList.add("show");
+        }
+
+    });
+</script>
+
+<script>
+    function typeWriterHTML(element, speed, onComplete) {
+      const html = element.innerHTML.trim();
+      element.innerHTML = ''; // Xóa chữ cũ đi để chuẩn bị gõ
+      element.style.opacity = 1; // Hiện khung chữ lên
+
+      let i = 0;
+      let isTag = false;
+      let text = '';
+
+      function type() {
+        if (i < html.length) {
+            // MẸO TẠO KHOẢNG LẶNG: 
+            // Nếu phát hiện sắp gõ thẻ <strong> (chứa chữ GIA ĐÌNH), hãy dừng lại 1.2 giây
+            if (html.substring(i).startsWith('<strong>')) {
+                setTimeout(processChar, 1200); // 1200ms = 1.2 giây
+            } else {
+                processChar();
+            }
+        } else {
+            if (onComplete) onComplete();
+        }
+        }
+        // Tách phần xử lý ký tự ra thành hàm con để dễ kiểm soát thời gian
+    function processChar() {
+        let char = html.charAt(i);
+        if (char === '<') isTag = true;
+        text += char;
+        if (char === '>') isTag = false;
+
+        element.innerHTML = text;
+        i++;
+
+        if (isTag) {
+            type(); // Quét thẻ HTML lập tức không chờ
+        } else {
+            setTimeout(type, speed); // Gõ chữ bình thường theo tốc độ speed
+        }
+    }
+    
+    type();
+  }
+
+  // Khởi tạo IntersectionObserver để theo dõi khi cuộn đến phần Câu chuyện
+  const storySection = document.querySelector('.story');
+  const storyBody = document.querySelector('.story__body');
+  const storyImg = document.querySelector('.story__img');
+  const storyWish = document.querySelector('.story__wish');
+  
+  let isStoryPlayed = false; // Đảm bảo hiệu ứng chỉ chạy 1 lần
+
+  const storyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          // Khi phần Story hiện trên màn hình >30% và chưa từng chạy
+          if (entry.isIntersecting && !isStoryPlayed) {
+              isStoryPlayed = true;
+
+              // 1. Đợi 1 giây cho phần "And... HOW WE MET" hiện ra xong
+              setTimeout(() => {
+                  // 2. Bắt đầu gõ đoạn văn 1 (Tốc độ 15ms/ký tự)
+                  typeWriterHTML(storyBody, 19, () => {
+                      
+                      // 3. Khi đoạn 1 gõ xong, hiện bức ảnh lên
+                      storyImg.classList.add('show-img');
+
+                      // 4. Chờ bức ảnh hiện ra từ từ (khoảng 1.2 giây) rồi gõ tiếp đoạn 2
+                      setTimeout(() => {
+                          typeWriterHTML(storyWish, 15);
+                      }, 1200);
+
+                  });
+              }, 1000); 
+          }
+      });
+  }, { threshold: 0.3 });
+
+  if(storySection) {
+      storyObserver.observe(storySection);
+  }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // 1. Tìm tất cả các khu vực có class "reveal" (bao gồm cả album của bạn)
+    const reveals = document.querySelectorAll(".reveal");
+
+    // 2. Tạo một "người quan sát" (Observer) để canh chừng thao tác cuộn chuột
+    const revealObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            // Nếu người dùng cuộn chuột tới khu vực đó...
+            if (entry.isIntersecting) {
+                // ...thì thêm class "active" vào để kích hoạt CSS Animation
+                entry.target.classList.add("active");
+                
+                // (Tùy chọn) Nếu bạn chỉ muốn ảnh bay vào 1 lần duy nhất rồi thôi, hãy bỏ dấu // ở dòng dưới:
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: null,
+        // Trigger khi khu vực đó xuất hiện khoảng 15% trên màn hình
+        threshold: 0.15 
+    });
+
+    // 3. Gắn "người quan sát" vào từng khu vực
+    reveals.forEach(function(reveal) {
+        revealObserver.observe(reveal);
+    });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // ==========================================
+    // PHẦN 1: KỊCH BẢN MỞ BAO THƯ (INTRO)
+    // ==========================================
+    const envelope3d = document.getElementById('envelope-3d');
+    const btnOpen = document.getElementById('openInvitation');
+    const dragHint = document.getElementById('drag-hint');
+    const intro = document.getElementById('intro');
+
+    // Khóa cuộn trang ban đầu
+    if (intro) {
+        document.body.style.overflow = 'hidden';
+    }
+
+    let isDragging = false;
+    let startX = 0, startY = 0; 
+    let currentX = 0, currentY = 0;
+    let rotationY = 0; 
+    let rotationX = 0; 
+    let isOpened = false; 
+
+    // Hàm xoay 3D
+    function startDrag(e) {
+        if (isOpened) return;
+        isDragging = true;
+        startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+        startY = e.type.includes('mouse') ? e.pageY : e.touches[0].pageY;
+        currentX = rotationY;
+        currentY = rotationX;
+        envelope3d.style.transition = 'none'; 
+    }
+
+    function drag(e) {
+        if (!isDragging || isOpened) return;
+        if (e.cancelable) e.preventDefault(); 
+        
+        const x = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+        const y = e.type.includes('mouse') ? e.pageY : e.touches[0].pageY;
+        
+        const deltaX = (x - startX) * 0.8;
+        const deltaY = (y - startY) * 0.8; 
+
+        rotationY = currentX + deltaX;
+        rotationX = currentY - deltaY; 
+
+        if (rotationX > 60) rotationX = 60;
+        if (rotationX < -60) rotationX = -60;
+
+        envelope3d.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+    }
+
+    function stopDrag() { isDragging = false; }
+
+    if (envelope3d) {
+        envelope3d.addEventListener('mousedown', startDrag);
+        window.addEventListener('mousemove', drag); 
+        window.addEventListener('mouseup', stopDrag);
+        envelope3d.addEventListener('touchstart', startDrag, {passive: false});
+        window.addEventListener('touchmove', drag, {passive: false});
+        window.addEventListener('touchend', stopDrag);
+    }
+
+    // Nút bấm Mở Thư
+    if(btnOpen) {
+        btnOpen.addEventListener('click', function() {
+            if (isOpened) return;
+            isOpened = true;
+
+            dragHint.style.opacity = '0';
+            this.style.opacity = '0';
+            this.style.pointerEvents = 'none';
+
+            let targetRotationY = Math.round((rotationY - 180) / 360) * 360 + 180;
+            let targetRotationX = 0; 
+
+            envelope3d.style.transition = 'transform 1.2s cubic-bezier(0.25, 1, 0.5, 1)';
+            envelope3d.style.transform = `rotateX(${targetRotationX}deg) rotateY(${targetRotationY}deg)`;
+
+            // Rút thư lên sau khi lật
+            setTimeout(() => {
+                envelope3d.classList.add('is-open');
+            }, 1200);
+
+            // ĐÃ TĂNG THỜI GIAN TỪ 6500 (6.5s) LÊN 8500 (8.5s)
+            // Khách mời sẽ có nhiều thời gian hơn để đọc thiệp
+            setTimeout(() => {
+                intro.style.opacity = '0';
+                
+                setTimeout(() => {
+                    intro.style.display = 'none';
+                    document.body.style.overflow = ''; // Mở khóa thanh cuộn
+                    
+                    // GỌI HÀM KÍCH HOẠT ANIMATION WEB NGAY TẠI ĐÂY
+                    startWebsiteAnimations();
+                    
+                }, 1000); 
+            }, 8500); 
+        });
+    }
+
+    // ==========================================
+    // PHẦN 2: HÀM KÍCH HOẠT ANIMATION (REVEAL) CỦA TRANG WEB
+    // ==========================================
+    function startWebsiteAnimations() {
+        const reveals = document.querySelectorAll(".reveal");
+
+        const revealObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    // Nếu muốn web cuộn qua lại vẫn bay vào bay ra, giữ nguyên dòng này
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.15 
+        });
+
+        reveals.forEach(function(reveal) {
+            revealObserver.observe(reveal);
+        });
+    }
+
+});
+</script>
+
+<script>
+    // Nếu URL hiện tại có chứa "/index.html", tự động chuyển về "/"
+    if (window.location.pathname.endsWith("/index.html")) {
+      window.history.replaceState({}, "", "/");
+    }
+</script>
+
+<!-- else {
+                // Nếu bạn muốn cuộn qua cuộn lại ảnh vẫn bay vào bay ra, hãy giữ dòng này:
+                entry.target.classList.remove("active");
+            } -->
+
 </html>
+
+<!-- const wishList = document.getElementById("wish-list");
+const pagination = document.getElementById("pagination");
+
+const pageSize = 3;
+
+let currentPage = 1;
+
+function renderPage(page){
+
+    currentPage = page;
+
+    wishList.innerHTML = "";
+
+    const start = (page-1)*pageSize;
+
+    const end = start + pageSize;
+
+    wishes.slice(start,end).forEach(w=>{
+
+        wishList.innerHTML += `
+
+        <div class="wish-card">
+
+            <div class="wish-header">
+
+                <div class="avatar">
+                    ${w.name.charAt(0).toUpperCase()}
+                </div>
+
+                <div class="wish-name">
+                    ${w.name}
+                </div>
+
+            </div>
+
+            <div class="wish-message">
+                ${w.message}
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+    renderPagination();
+
+}
+
+function renderPagination(){
+
+    pagination.innerHTML="";
+
+    const totalPages=Math.ceil(wishes.length/pageSize);
+
+    // nút Previous
+    pagination.innerHTML+=`
+        <button class="page-btn"
+            ${currentPage===1?"disabled":""}
+            onclick="renderPage(${currentPage-1})">
+            ‹
+        </button>
+    `;
+
+    for(let i=1;i<=totalPages;i++){
+
+        pagination.innerHTML+=`
+            <button
+                class="page-btn ${i===currentPage?"active":""}"
+                onclick="renderPage(${i})">
+                ${i}
+            </button>
+        `;
+
+    }
+
+    // nút Next
+    pagination.innerHTML+=`
+        <button class="page-btn"
+            ${currentPage===totalPages?"disabled":""}
+            onclick="renderPage(${currentPage+1})">
+            ›
+        </button>
+    `;
+
+}
+
+renderPage(1); -->
